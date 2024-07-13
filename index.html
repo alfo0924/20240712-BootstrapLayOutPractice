@@ -74,99 +74,9 @@
             text-align: center;
             font-weight: 700;
         }
-      .profile
-        {
 
-          clear:both;
-          background: rgb(120, 120, 120);
-          justify-content: center;
-          align-items: center;
-          justify-items: center;
-          text-align: center;
-          text-decoration: none;
-          list-style-type: none;
-          flex-grow: 10;
-          padding: 50px;
-          width: auto;
-        }
-
-        .con{
-          opacity: 0;
-        }
-        
-        .profile .card-body1 img:hover {
-          opacity: 0.2;
-          transition: opacity 0.5s ease-in-out;
-      }
       
-      .profile .card-body1 img:hover + .con {
-          opacity: 1;
-          transition: opacity 0.5s ease-in-out;
-          padding: 30px;
-
-         
-        }
-        .profile .card-header1
-        {
-          padding: 0px 0px 20px 0px;
-
-        }
-        
-      
-      .profile .card-body1 .con {
-          opacity: 0;
-          transition: opacity 0.5s ease-in-out;
-          position: relative;
-
-      }
-      .profile .card-footer1
-      {
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        text-align: center;
-        justify-items: center;
-      
-        text-decoration: none;
-        list-style-type: none;
-        background-color:rgb(138, 138, 138);
-        color: rgb(203, 203, 203);
-        padding: 0px 0px  1% 0px;
- 
-      }
-      .profile .card-footer1:hover
-      {
-        padding:10px;
-        color:rgb(90, 90, 90);
-        background: rgb(219, 218, 218);
-        font-weight: 800;
-        text-transform: uppercase;
-      }
-      .profile .card-body1 
-      {
-        padding:0px 0px -100px 0px ;
-      }
-
-      .card0
-      {
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
-        align-content: center !important;
-      }
-
-      .card
-      {
-        padding: 0px 0px 20px 0px;
-      }
-      
-      .div1
-      {
-        float:left;
-        width: 32%;
-        justify-content: center;
-        align-items: center;
-      }
+  
       .divBlank
       {
         clear: both;
@@ -195,6 +105,15 @@
         color:rgb(22, 22, 22);
         font-size: 400;
       }
+      .div2 a:hover
+      {
+        background: rgba(255, 255, 255, 0.868);
+        color: rgba(194, 194, 194, 0.514);
+        border-radius: 2%;
+        padding: 15px;
+        font-size: 30px;
+        transition: 0.4s;
+      }
       .div23 p
       {
         padding: 25px;
@@ -219,7 +138,15 @@
         padding: 5px;
         color:rgb(255, 255, 255);
       }
-
+      .div23 a:hover
+      {
+        background: rgba(194, 194, 194, 0.838);
+        color:  rgba(255,255,255);
+        border-radius: 2%;
+        padding: 15px;
+        font-size: 30px;
+        transition: 0.4s;
+      }
 
 
     </style>
@@ -309,7 +236,7 @@
     <div class="divBlank"></div>
 
 
-    <div class="div2">
+    <div id="profile" class="div2">
       <div class="row g-0 bg-body-secondary position-relative">
         <div class="col-md-6 mb-md-0 p-md-4">
           <img src="https://picsum.photos/500/500/?random=5479" alt="">
@@ -358,6 +285,8 @@
     
 
 
+  <div class="divBlank"></div>
+  
   
 
 
