@@ -16,6 +16,7 @@
             color:rgb(15, 15, 15);
             align-items: center;
             justify-content: center;
+
             text-decoration: none;
             list-style-type: none;
             
@@ -29,7 +30,7 @@
             list-style-type: none;
             background: rgba(177,177,177);
             color: rgb(18, 18, 18);
-            padding: 30px;
+            padding: 50px;
         }
         .navBar a
         {
@@ -70,30 +71,27 @@
         }
       .profile
         {
-          display: block;
+
           clear:both;
-          border: red solid 3px;
           background: rgb(120, 120, 120);
           justify-content: center;
           align-items: center;
           justify-items: center;
           text-align: center;
-          width: auto;
           text-decoration: none;
           list-style-type: none;
-  
-        }
-        .profile .img
-        {
-          position: absolute;
+
+          flex-grow: 10;
+          padding: 50px;
         }
 
         .con{
           opacity: 0;
         }
         .profile .card-body1 img:hover {
-          opacity: 0;
+          opacity: 0.2;
           transition: opacity 0.5s ease-in-out;
+          padding: 30px;
       }
       
       .profile .card-body1 img:hover + .con {
@@ -107,9 +105,28 @@
           transition: opacity 0.5s ease-in-out;
           position: relative;
       }
+      .profile .card-footer1
+      {
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        justify-items: center;
       
-          
-        
+        text-decoration: none;
+        list-style-type: none;
+        background-color:rgb(138, 138, 138);
+        color: rgb(203, 203, 203);
+        padding: 1%;
+ 
+      }
+
+
+  
+
+      
+
+      
     
 
     </style>
@@ -123,8 +140,8 @@
 <div class="navBar">
  
 <a href="#jumbotron">Jumbotron </a>
-<a href="#content"> Content </a>
-<a href="">Link3 </a>
+<a href="#content">Content </a>
+<a href="#profile">Profile </a>
 
 </div>
 
@@ -179,8 +196,8 @@
 
 
 
-<div class="profile">  
-  <div class="container mt-3">
+<div id="profile" class="profile">  
+  <div class="container m-2">
     <h2>Card Header and Footer</h2>
     <div class="card1">
       <div class="card-header1">Profile sample</div>
@@ -190,11 +207,20 @@
         
         <div class="con" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Error et ipsa earum itaque eaque aliquid asperiores expediLorem ipsum dolor sit amet consectetur adipisicing elit. Error et ipsa earum itaque eaque aliquid asperiores expedita repellat veniam hic reiciendis, aut doloremque saepe dolores ametLorem ipsum dolor sit amet consectetur adipisicing elit. Error et ipsa earum itaque eaque aliquid asperiores expedita repellat veniam hic reiciendis, aut doloremque saepe dolores ametta repellat veniam hic reiciendis, aut doloremque saepe dolores ametue eaque aliquid asperiores expedita repellat veniam hic reiciendis, aut doloremque saepe dolores amet beatae numquam autem quae?
         </div>
-
-
       </div> 
-      <div class="card-footer1"><a href="" >See profile</a></div>
-    </div>
+      <a class="card-footer1" href="" >See profile</a></div>
+
+  </div>
+</div>
+
+
+<div class="card" style="width:400px">
+
+    <img src="https://picsum.photos/500/500?random=2258" alt="">
+  <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">S Lorem ipsum dolor sit amet, consectetur adipisicssissimos quo aut debitis illo officia ex. Consequuntur ea nisi similique, ipsa quo dolorem vitae ullam!mos quo aut debitis illo officia ex. Consequuntur ea nisi similique, ipsa quo dolorem vitae ullam!ing elit. Quaerat aliquid ratione odio, ipsa vel dignissimos quo aut debitis illo officia ex. Consequuntur ea nisi similique, ipsa quo dolorem vitae ullam!</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
   </div>
 </div>
 
