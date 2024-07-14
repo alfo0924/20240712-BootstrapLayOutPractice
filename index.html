@@ -160,6 +160,7 @@
         border-radius: 1%;
         padding: 5px;
         color:rgb(255, 255, 255);
+        font-weight: 400;
         transition: 0.3s;
       }
       .div23 a:hover
@@ -228,7 +229,23 @@
         background:rgba(154,0,0) !important ;
         transition: 0.6s;
         font-size: 900;
-
+      }
+      #accordion div:hover
+      {
+        background: rgba(154,0,0);
+        color:rgba(223,223,223);
+        transition: 0.6s;
+      }
+      #accordion button:hover
+      {
+        background:rgba(154,0,0);
+        color:rgba(255, 255, 255, 0.868);
+        forced-color-adjust: none;
+      }
+      #accordion button:focus
+      {
+        outline: none;
+        box-shadow:  0 0 15px rgba(123, 0, 0, 0.5);
       }
 
     </style>
@@ -344,11 +361,11 @@
         <div class="col-md-6 order-md-2 mb-md-0 pe-md-4">
           <img src="https://picsum.photos/500/500/?random=3489" alt="" class="img-custom">
         </div>
-        <div class="col-md-6 order-md-1 p-4 align-items-center justify-content-center">
+        <div class="col-md-6 order-md-1 p-4 d-flex align-items-center justify-content-center">
           <div class="text-md-center">
           <h1 class="mt-5">課程介紹</h1>
           <p>我們的課程設計以學生的全面發展為目標,涵蓋了各個學科領域。在語文課程中,我們注重培養學生的閱讀、寫作和口語表達能力,並引導他們欣賞文學作品,培養良好的審美情趣。在數學課程中,我們注重培養學生的邏輯思維和解決問題的能力,幫助他們掌握數學的基本概念和運算技巧。在科學課程中,我們注重培養學生的觀察和實驗能力,讓他們了解自然界的奧秘,並培養他們的科學思維。在歷史和地理課程中,我們注重培養學生的時間和空間意識,讓他們了解人類文明的發展歷程,並培養他們的社會責任感。我們的課程設計旨在幫助學生全面發展,成為有理想、有本領、有擔當的未來公民。</p>
-          <a href="#" >課程內容</a>
+          <a href="#courseIntroduce" >課程內容</a>
         </div>
         </div>
       </div>
@@ -447,7 +464,7 @@
 
 
   <div class="courseIntroduce">
-    <div class="accordion" id="accordionExample">
+    <div id="accordion" class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
