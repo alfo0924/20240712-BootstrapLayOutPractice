@@ -29,9 +29,12 @@
             justify-content: center;
             text-decoration: none;
             list-style-type: none;
-            background: rgba(177,177,177);
+            background: rgb(154, 0, 0);
             color: rgb(18, 18, 18);
             padding: 50px;
+            position: sticky;
+            
+
         }
         .navBar a
         {
@@ -41,16 +44,18 @@
             font-size: 55px;
             font-weight: 800;
             width: 100%;
+   
             
         }
         .navBar a:hover
         {
             color: rgb(0, 0, 0);
- /**           background: rgb(168, 168, 168);**/
+              /** background: rgb(168, 168, 168);**/
             transition: ease-in-out 0.5s;
             border-radius: 5%;
             font-weight: 900;
             text-transform: uppercase;
+         
         }
         .columnBox div
         {
@@ -65,7 +70,7 @@
         footer
         {
             clear: both;
-            background:  rgba(120,120,120);
+            background: rgb(154, 0, 0);
             padding: 50px;
             color: rgb(223, 223, 223);
             font-size: 20px;
@@ -257,7 +262,7 @@
           <div class="text-md-center">
             <h1 class="mt-5">老師介紹</h1>
             <p>我們是一群經驗豐富的教師,擁有多年教學經驗。我們熱愛教育事業,致力於為學生提供優質的教學服務。在課堂上,我們會採用互動式教學方式,鼓勵學生積極參與,培養他們的批判性思維和解決問題的能力。除了課堂教學,我們也會安排一些課外活動,讓學生有機會實踐所學,並培養團隊合作精神。我們相信每個學生都有潛力,只要得到適當的指導和支持,都能夠發揮所長,成為出色的人才。我們會竭盡全力,幫助每一位學生實現自己的夢想。</p>
-            <a href="#" >師資介紹</a>
+            <a href="#teachers" >師資介紹</a>
           </div>
         </div>
       </div>
@@ -300,7 +305,7 @@
   <div class="divBlank"></div>
   
 
-    <div class="div1">
+    <div id="teachers" class="div1">
       <div class="container d-flex justify-content-center align-items-center col-3 m-1">
         <!-- Centering container -->
             <div class="card" style="width: 400px;">
@@ -354,6 +359,11 @@
   </div>
 
 
+
+  <div class="divBlank"></div>
+
+
+  
 
 <footer >
   &copy; D1204433林俊傑 All Rights Reserved. <sup>&trade;</sup> 
